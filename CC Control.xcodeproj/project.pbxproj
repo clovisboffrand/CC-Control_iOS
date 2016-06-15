@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		096AA6FF1D11282100C238BF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 096AA6FE1D11282100C238BF /* Reachability.m */; };
 		09C73C351D10EA870004DB60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C73C341D10EA870004DB60 /* main.m */; };
 		09C73C381D10EA870004DB60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C73C371D10EA870004DB60 /* AppDelegate.m */; };
 		09C73C3E1D10EA870004DB60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C73C3C1D10EA870004DB60 /* Main.storyboard */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		096AA6FD1D11282100C238BF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		096AA6FE1D11282100C238BF /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		096AA7011D11287B00C238BF /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		09C73C301D10EA870004DB60 /* CC Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CC Control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C73C341D10EA870004DB60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		09C73C361D10EA870004DB60 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +82,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		096AA6FC1D11280300C238BF /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				096AA6FD1D11282100C238BF /* Reachability.h */,
+				096AA6FE1D11282100C238BF /* Reachability.m */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		096AA7001D11284700C238BF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				096AA7011D11287B00C238BF /* Constants.h */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		09C73C271D10EA870004DB60 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +125,8 @@
 				09C73C361D10EA870004DB60 /* AppDelegate.h */,
 				09C73C371D10EA870004DB60 /* AppDelegate.m */,
 				09C73C691D10EC280004DB60 /* ViewControllers */,
+				096AA6FC1D11280300C238BF /* Libraries */,
+				096AA7001D11284700C238BF /* Common */,
 				09C73C3C1D10EA870004DB60 /* Main.storyboard */,
 				09C73C3F1D10EA870004DB60 /* Assets.xcassets */,
 				09C73C411D10EA870004DB60 /* LaunchScreen.storyboard */,
@@ -280,6 +303,7 @@
 			files = (
 				09C73C381D10EA870004DB60 /* AppDelegate.m in Sources */,
 				09C73C351D10EA870004DB60 /* main.m in Sources */,
+				096AA6FF1D11282100C238BF /* Reachability.m in Sources */,
 				09C73C681D10EC1F0004DB60 /* DashboardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,6 +530,7 @@
 				09C73C5F1D10EA870004DB60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09C73C601D10EA870004DB60 /* Build configuration list for PBXNativeTarget "CC ControlTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +539,7 @@
 				09C73C621D10EA870004DB60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09C73C631D10EA870004DB60 /* Build configuration list for PBXNativeTarget "CC ControlUITests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +548,7 @@
 				09C73C651D10EA870004DB60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

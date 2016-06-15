@@ -16,11 +16,30 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lu1-7g-nq9">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="HN6-WK-urv"/>
+                                </connections>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lu1-7g-nq9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5Nw-6h-oxo"/>
+                            <constraint firstAttribute="trailing" secondItem="Lu1-7g-nq9" secondAttribute="trailing" id="JBM-Vm-El4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lu1-7g-nq9" secondAttribute="bottom" id="LG0-Lx-cXw"/>
+                            <constraint firstItem="Lu1-7g-nq9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Nom-WG-tXU"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mWebView" destination="Lu1-7g-nq9" id="M7U-jO-5Sh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="530" y="408"/>
         </scene>
     </scenes>
 </document>
