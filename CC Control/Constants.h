@@ -12,7 +12,8 @@
 
 // Constants for CC Control App
 //
-#define WEB_URL @"http://thelimiteddemo.spencertechonline.com/cc-control/"
+#define WEB_URL         @"http://thelimiteddemo.spencertechonline.com/cc-control/"
+#define REACHABLE_TEST  @"www.google.com"
 //
 
 

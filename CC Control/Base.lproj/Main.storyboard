@@ -41,5 +41,37 @@
             </objects>
             <point key="canvasLocation" x="530" y="408"/>
         </scene>
+        <!--Error View Controller-->
+        <scene sceneID="E5n-az-oK1">
+            <objects>
+                <viewController storyboardIdentifier="ErrorViewController" id="zGP-No-27k" customClass="ErrorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ogq-Ff-Vm4"/>
+                        <viewControllerLayoutGuide type="bottom" id="6c5-tr-4s3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XZy-0g-RFK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Error" translatesAutoresizingMaskIntoConstraints="NO" id="o3b-gS-vrH">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6c5-tr-4s3" firstAttribute="top" secondItem="o3b-gS-vrH" secondAttribute="bottom" id="OxE-fF-z5N"/>
+                            <constraint firstItem="o3b-gS-vrH" firstAttribute="leading" secondItem="XZy-0g-RFK" secondAttribute="leading" id="RzE-CP-ITL"/>
+                            <constraint firstAttribute="trailing" secondItem="o3b-gS-vrH" secondAttribute="trailing" id="T08-Po-oKP"/>
+                            <constraint firstItem="o3b-gS-vrH" firstAttribute="top" secondItem="XZy-0g-RFK" secondAttribute="top" id="iu1-lk-mZb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0dZ-OJ-I8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1234" y="408"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Error" width="2763" height="2052"/>
+    </resources>
 </document>
